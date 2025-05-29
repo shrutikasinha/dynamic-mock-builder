@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧱 Form Builder App
 
-## Getting Started
+A drag-and-drop form builder built using **Next.js** and **Tailwind CSS**. It allows users to visually build custom forms with various input types, configure their properties, apply validation rules, and export or import form definitions in JSON format.
 
-First, run the development server:
+![Form Builder Screenshot](./screenshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🔧 Drag-and-drop form builder interface
+- 🧩 Supports multiple field types:
+  - Text Input
+  - Email
+  - Number
+  - Textarea
+  - Select Dropdown
+  - Checkbox
+  - Radio Button
+  - Date Picker
+  - Document Upload
+- 🎯 Field customization:
+  - Label
+  - Placeholder
+  - Required toggle
+  - Validation rules (e.g. number-only, custom regex)
+- 🔄 **JSON Import/Export**:
+  - Export your entire form layout as a JSON file
+  - Import a previously saved JSON to restore the form layout
+- 👁️ **Preview Mode**:
+  - Preview the fully rendered form to see its final appearance and layout
+- ⚛️ Built with **Next.js**
+- 🎨 Styled using **Tailwind CSS**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📥 JSON Import/Export
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Export Form Layout
 
-## Learn More
+Click the **Export** button to download the current form structure as a `.json` file. This file includes all fields, labels, placeholders, validation rules, and settings.
 
-To learn more about Next.js, take a look at the following resources:
+### Import Form Layout
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Click the **Import** button and upload a previously exported `.json` file. The builder will automatically restore the form layout and configuration exactly as it was saved.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This feature is helpful for:
+- Backing up forms
+- Sharing form layouts with others
+- Quickly loading pre-configured templates
 
-## Deploy on Vercel
+## 👁️ Preview Mode
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Use the **Preview** button to see how the final form will appear to end users. This mode renders all the added fields in their actual positions, providing a realistic view of the form before publishing or exporting.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Code Mode
+
+Use the **Code** button to generate json for present layout
