@@ -2,8 +2,6 @@
 
 A drag-and-drop form builder built using **Next.js** and **Tailwind CSS**. It allows users to visually build custom forms with various input types, configure their properties, apply validation rules, and export or import form definitions in JSON format.
 
-![Form Builder Screenshot](./screenshot.png)
-
 ## ✨ Features
 
 - 🔧 Drag-and-drop form builder interface
