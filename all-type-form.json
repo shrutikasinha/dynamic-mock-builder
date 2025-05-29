@@ -1,0 +1,146 @@
+{
+  "id": "10c09812-2f00-490b-96e3-87b0d32d66f0",
+  "title": "All Type Form",
+  "description": "",
+  "fields": [
+    {
+      "id": "f46b549a-05a8-4fe2-bd68-8335ab03ec4f",
+      "type": "text",
+      "label": "First Name ",
+      "placeholder": "(Custom Regex Only a-z)",
+      "required": false,
+      "validation": [
+        {
+          "type": "pattern",
+          "message": "Only A-Z a-z are allowed",
+          "value": "^[A-Za-z]+(?:\\s[A-Za-z]+)*$"
+        }
+      ],
+      "order": 0
+    },
+    {
+      "id": "5eff3182-1287-43f8-9178-b1aec3faade9",
+      "type": "email",
+      "label": "Email",
+      "placeholder": "Predefined Regex Email",
+      "required": true,
+      "validation": [
+        {
+          "type": "pattern",
+          "message": "Please enter a valid email address",
+          "value": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+        }
+      ],
+      "order": 1
+    },
+    {
+      "id": "e6f3efb0-b6e1-4bd2-a93c-a2a9d19b3494",
+      "type": "text",
+      "label": "Phone Number",
+      "placeholder": "Predefined regex phone",
+      "required": false,
+      "validation": [],
+      "order": 2
+    },
+    {
+      "id": "b6a1d08c-c84e-436e-b98a-0d65ac1426f5",
+      "type": "email",
+      "label": "Pin",
+      "placeholder": "Number field",
+      "required": true,
+      "validation": [],
+      "order": 3
+    },
+    {
+      "id": "60453421-6681-40e1-b08f-889702606958",
+      "type": "select",
+      "label": "State",
+      "placeholder": "Choose from 4 options ",
+      "required": true,
+      "options": [
+        "MP",
+        "UP",
+        "RJ",
+        "HP"
+      ],
+      "validation": [
+        {
+          "type": "pattern",
+          "message": "Field pattern validation failed",
+          "value": ""
+        }
+      ],
+      "order": 4
+    },
+    {
+      "id": "578389bf-8ded-47b1-a24a-8d3412fa53a5",
+      "type": "textarea",
+      "label": "Description",
+      "placeholder": "Predefined description text",
+      "required": true,
+      "validation": [
+        {
+          "type": "pattern",
+          "message": "Field pattern validation failed",
+          "value": ""
+        }
+      ],
+      "order": 5
+    },
+    {
+      "id": "6982c12b-63db-471f-b2b2-728be691fb3a",
+      "type": "checkbox",
+      "label": "Are you NRI",
+      "placeholder": "CheckBox",
+      "required": true,
+      "validation": [],
+      "order": 6
+    },
+    {
+      "id": "5efe3a9b-95f7-40e0-b9a3-b5e466a670c3",
+      "type": "radio",
+      "label": "Gender",
+      "placeholder": "Predefined fiedl",
+      "required": false,
+      "options": [
+        "Male",
+        "Female",
+        "Others"
+      ],
+      "validation": [],
+      "order": 7
+    },
+    {
+      "id": "1d387487-50b8-460d-b8f5-b1faa42db9eb",
+      "type": "date",
+      "label": "Date of Birth",
+      "placeholder": "Pre defined field",
+      "required": true,
+      "validation": [],
+      "order": 8
+    },
+    {
+      "id": "6300b6ef-d8ed-4590-aedd-b00b51181c64",
+      "type": "file",
+      "label": "Add file",
+      "placeholder": "Only Images",
+      "required": true,
+      "validation": [
+        {
+          "type": "fileType",
+          "message": "Please upload an image file (JPG, JPEG, PNG, GIF)",
+          "value": [
+            ".jpg",
+            ".jpeg",
+            ".png",
+            ".gif"
+          ]
+        }
+      ],
+      "order": 9,
+      "accept": "image/*"
+    }
+  ],
+  "createdAt": "2025-05-28T19:02:28.665Z",
+  "updatedAt": "2025-05-28T19:19:08.003Z"
+}
